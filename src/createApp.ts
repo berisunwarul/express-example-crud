@@ -2,10 +2,10 @@ import express from 'express';
 import dotenv from 'dotenv';
 import path from 'path';
 import cookieParser from 'cookie-parser';
-import userRouters from './routes/users.routes';
-import { taskRouters } from './routes/tasks.route';
-import { rolesRouters } from './routes/roles.route';
-import { homeRouters } from './routes/home.route';
+import userRouters from './users/users.routes';
+import { taskRouters } from './tasks/tasks.routes';
+import { rolesRouters } from './roles/roles.routes';
+import { homeRouters } from './home/home.routes';
 
 export function createApp() {
     const app: express.Application = express();
