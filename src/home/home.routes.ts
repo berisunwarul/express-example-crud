@@ -5,7 +5,7 @@ const router = express.Router();
 router.get('/', (req, res) => {
     // res.cookie('username', 'John Doe');
     // res.clearCookie();
-    res.send('set');
+    res.send('Hello world');
 });
 
 router.get('/get', (req, res) => {
